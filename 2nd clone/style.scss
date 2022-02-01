@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("wp2284539-spacex-wallpapers.png");
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    src: url('../../D-DIN.otf');
+    }
+
+%align-center {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    padding: 33px;
+    @extend %align-center;
+    height: 30px;
+
+
+    &__logo {
+       width: fit-content;
+        img {
+        position: absolute;
+        width: fit-content;
+        top: 32px;
+        left: 50px;
+        width: 210px;
+        height: auto;
+       }
+    }
+    &__menu {
+      @extend %align-center;
+       &--link {
+        font-size: 14px;
+        font-weight: 500;
+        margin-right: 24px; 
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        }
+    }        
+    &__right {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        right: 100px;
+        &--btn {
+            font-size: 14px;
+            font-weight: 500; 
+            text-decoration: none;
+            text-transform: uppercase;
+            color: white;
+            margin-right: 15px;
+            } 
+        &--bars {
+            font-size: 16px;
+            color: white;
+        }
+        }
+    }
